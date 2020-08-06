@@ -43,13 +43,13 @@ public class MainController {
     @RequestMapping(method = RequestMethod.GET, path = {"/", ""})
     public String mainView() {
 
-        return "/main";
+        return "/mainView/index";
     }
 
     @RequestMapping(method = RequestMethod.GET, path = "/add")
     public String addLocationView() {
 
-        return "/add";
+        return "/view/index";
     }
 
 

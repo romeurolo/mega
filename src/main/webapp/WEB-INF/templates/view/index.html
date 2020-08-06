@@ -1,0 +1,131 @@
+<!doctype html>
+<html class="no-js" lang="" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Estabishment Name</title> <!-- get from server-->
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/mystyle.css">
+
+  <meta name="theme-color" content="#fafafa">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLzbDAbaqjZc-sgalTjo0UdIj7tHl3wEg&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+    <style type="text/css">
+    #map {
+        height: 350px;
+      }
+    
+    </style>
+</head>
+
+<body>
+  <div> 
+    <div class="titleBarContainer">
+      <div class="ctrl-button"> </div>
+        <a href="https://mega-ac.herokuapp.com" id="back-btn"> voltar</a>
+    </div> 
+    <div class="container">
+      <div class="test">
+          <div class="stb-test">
+                <img class="stablishment-picture" src="/Users/codecadet/Desktop/html5-boilerplate_v8/img/stablishment-pic.png" alt="stablishment-picture"> <!-- link picture.-->
+          </div>
+          <div class="stablishment-name">
+            <h2 th:value = ></h2>
+            <br>
+            <br>
+            <h6 id="score">Score</h6>
+          </div>  <!-- link DB-->
+          <div class="stamp"> 
+              <img id="stamp" class="stablishment-stamp" src="/Users/codecadet/Desktop/html5-boilerplate_v8/img/stablishment-pic.png" alt="stablishment-stamp"> <!-- link picture.-->
+          </div>
+      </div>
+            <br>
+            <br> <!-- add line-->
+      <div class="comment-session">
+          <div class="comment-session-title"> <!--make this box flex-->
+            <div>
+                <div id="comment-box-header">
+                    <h6 id="review" style="float: right">Passionate kiss 5.0 /Not even with lube </h6><!-- link DB-->
+                    <h3>If only the Fuhrer knew...</h3>
+                </div>
+            </div>
+          </div>
+          
+          <br>
+          <div>
+            <h5>User Name</h5>
+          </div>
+            <h7>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</h7>
+          </div>
+            
+      </div>
+      
+    <div id="map"></div>
+    
+
+      <div id="user-comment">
+        <br>
+        <br>
+          <h3>Show me yours</h3>
+          <form>
+              <div class="form-row">
+                  <div class="col-md-5 mb-3">
+                    <label for="validationDefault01">What would like to be called in bed...</label>
+                    <input type="text" class="form-control" id="validationDefault03" required>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <label for="validationDefault02">Was it good for you?</label>
+                    <select class="custom-select" id="validationDefault04" required>
+                      <option selected disabled value="">Choose...</option>
+                      <option>...</option>
+                    </select>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                      <label for="validationDefault03">Now tell me the truth...</label>
+                      <select class="custom-select" id="validationDefault04" required>
+                        <option selected disabled value="">Choose...</option>
+                        <option>...</option>
+                      </select>
+                  </div>
+                  <div>
+                      <div class="col-md-12 mb-6">
+                        <label for="validationDefault04">Tell me about it!</label>
+                        <input type="text" class="form-control" id="validationDefault03" required>
+                      </div>
+                  </div>  
+                  <div style="display: block">
+                      <button class="btn btn-primary" type="submit"></button>
+                  </div>
+          
+          </form>
+      </div>
+    </div>
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  
+  
+</body>
+
+</html>
