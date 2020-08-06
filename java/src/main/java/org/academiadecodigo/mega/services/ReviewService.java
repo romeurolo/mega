@@ -7,5 +7,8 @@ public interface ReviewService {
 
     Review get(Integer id);
 
+    Review save(Review review);
+
+    void delete(Integer id);
 }
 
