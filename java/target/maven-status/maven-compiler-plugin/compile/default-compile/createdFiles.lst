@@ -1,0 +1,15 @@
+org/academiadecodigo/mega/persistence/model/Model.class
+org/academiadecodigo/mega/persistence/dao/jpa/ReviewJpaDao.class
+org/academiadecodigo/mega/persistence/dao/Dao.class
+org/academiadecodigo/mega/SpringBootstrap.class
+org/academiadecodigo/mega/persistence/dao/jpa/LocationJpaDao.class
+org/academiadecodigo/mega/persistence/model/Review.class
+org/academiadecodigo/mega/services/LocationService.class
+M.class
+org/academiadecodigo/mega/persistence/dao/ReviewDao.class
+org/academiadecodigo/mega/persistence/dao/LocationDao.class
+org/academiadecodigo/mega/persistence/model/AbstractModel.class
+org/academiadecodigo/mega/persistence/dao/jpa/GenericJpaDao.class
+org/academiadecodigo/mega/services/LocationServiceImpl.class
+org/academiadecodigo/mega/persistence/model/Location.class
+org/academiadecodigo/mega/services/ReviewService.class
