@@ -12,10 +12,6 @@
 
     <bean class="org.academiadecodigo.mega.SpringBootstrap"/>
 
-    <bean class="org.springframework.context.support.PropertySourcesPlaceholderConfigurer">
-        <property name="locations" value="classpath:mega.properties"/>
-    </bean>
-
     <!-- Use spring servlet for all requests, including static resources -->
     <mvc:default-servlet-handler/>
 
@@ -25,9 +21,7 @@
     <!-- Base package to search for spring beans -->
     <context:component-scan base-package="org.academiadecodigo.mega"/>
 
-    <mvc:interceptors>
-        <bean class="org.academiadecodigo.mega.interceptor.LogRequestsInterceptor"/>
-    </mvc:interceptors>
+
 
     <import resource="persistence.xml"/>
 
