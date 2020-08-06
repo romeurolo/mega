@@ -8,24 +8,24 @@
     <bean class="org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor"/>
 
     <!-- c3p0 database connection pool management -->
-    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+   <!-- <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
 
         <property name="driverClass" value="com.mysql.cj.jdbc.Driver"/>
         <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/mega?useSSL=false&amp;serverTimezone=UTC"/>
         <property name="user" value="root"/>
         <property name="password" value=""/>
 
-        <!-- c3p0 database connection pool management properties -->
-        <property name="minPoolSize" value="1"/>
+        c3p0 database connection pool management properties -->
+        <!--<property name="minPoolSize" value="1"/>
         <property name="maxPoolSize" value="10"/>
         <property name="acquireIncrement" value="1"/>
         <property name="maxStatements" value="0"/>
 
-        <!-- destroy idle pool after 300ms -->
+        destroy idle pool after 300ms
         <property name="idleConnectionTestPeriod" value="300"/>
 
-        <!-- destroy db connection if it fails to login after 7200ms -->
-        <property name="loginTimeout" value="7200"/>
+         destroy db connection if it fails to login after 7200ms -->
+        <!--<property name="loginTimeout" value="7200"/>
 
     </bean>
 
@@ -40,8 +40,8 @@
             <map>
                 <entry key="hibernate.show_sql" value="true" />
                 <entry key="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect"/>
-                <!-- Run as create once to initialize the schema -->
-                <entry key="hibernate.hbm2ddl.auto" value="validate"/>
+                Run as create once to initialize the schema
+               <entry key="hibernate.hbm2ddl.auto" value="validate"/>
             </map>
         </property>
 
@@ -49,7 +49,7 @@
 
 
 
-    </bean>
+    </bean>-->
     <bean class="org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor"/>
 
     <bean class="java.net.URI" id="dbUrl">
@@ -71,7 +71,7 @@
         <property name="jpaProperties">
             <map>
                 <entry key="hibernate.dialect" value="org.hibernate.dialect.PostgresPlusDialect"/>
-                <!-- Run as create once to initialize the schema then validate -->
+                <!--Run as create once to initialize the schema then validate-->
                 <entry key="hibernate.hbm2ddl.auto" value="create"/>
             </map>
         </property>

@@ -40,21 +40,22 @@
             <map>
                 <entry key="hibernate.show_sql" value="true" />
                 <entry key="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect"/>
-                <!-- Run as create once to initialize the schema -->
+                <!--Run as create once to initialize the schema-->
                 <entry key="hibernate.hbm2ddl.auto" value="validate"/>
             </map>
         </property>
+
+
+
+
+
     </bean>
-    <bean class="org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor"/>
+
+    <!--<bean class="org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor"/>
 
     <bean class="java.net.URI" id="dbUrl">
         <constructor-arg value="#{systemEnvironment['DATABASE_URL']}"/>
     </bean>
-
-
-
-
-
     <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
         <property name="driverClass" value="org.postgresql.Driver"/>
         <property name="jdbcUrl" value="#{ 'jdbc:postgresql://' + @dbUrl.getHost() + ':' + @dbUrl.getPort() + @dbUrl.getPath() }"/>
@@ -71,10 +72,10 @@
         <property name="jpaProperties">
             <map>
                 <entry key="hibernate.dialect" value="org.hibernate.dialect.PostgresPlusDialect"/>
-                <!-- Run as create once to initialize the schema then validate -->
+                // Run as create once to initialize the schema then validate
                 <entry key="hibernate.hbm2ddl.auto" value="create"/>
             </map>
         </property>
-    </bean>
+    </bean>-->
 
 </beans>
