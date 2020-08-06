@@ -1,7 +1,9 @@
 package org.academiadecodigo.mega.command;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
+import org.springframework.stereotype.Service;
 
+@Service
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 public class LocationDto {
     private Integer id;
