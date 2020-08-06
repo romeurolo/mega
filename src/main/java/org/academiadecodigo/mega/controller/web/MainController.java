@@ -7,6 +7,7 @@ import org.academiadecodigo.mega.services.LocationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -51,9 +52,10 @@ public class MainController {
         return "/add";
     }
 
-    @RequestMapping(method = RequestMethod.GET, path = "/location")
-    public String LocationView() {
 
+    @RequestMapping(method = RequestMethod.GET, path = "/{id}")
+    public String LocationView(@PathVariable Integer id, Model model) {
+        model.addAttribute("id",id);
         return "/view";
     }
 }
