@@ -49,13 +49,13 @@ public class MainController {
     @RequestMapping(method = RequestMethod.GET, path = "/add")
     public String addLocationView() {
 
-        return "/view/index";
+        return "/add";
     }
 
 
     @RequestMapping(method = RequestMethod.GET, path = "/{id}")
     public String LocationView(@PathVariable Integer id, Model model) {
         model.addAttribute("id",id);
-        return "/view";
+        return "/view/index";
     }
 }
