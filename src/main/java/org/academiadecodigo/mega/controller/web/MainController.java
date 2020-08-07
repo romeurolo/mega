@@ -1,6 +1,7 @@
 package org.academiadecodigo.mega.controller.web;
 
 import org.academiadecodigo.mega.command.LocationDto;
+import org.academiadecodigo.mega.command.ReviewDto;
 import org.academiadecodigo.mega.converters.LocationDtoToLocation;
 import org.academiadecodigo.mega.converters.LocationToLocationDto;
 import org.academiadecodigo.mega.services.LocationService;
@@ -47,7 +48,8 @@ public class MainController {
     }
 
     @RequestMapping(method = RequestMethod.GET, path = "/add")
-    public String addLocationView() {
+    public String addLocationView(Model model) {
+            model.addAttribute("review", new ReviewDto());
 
         return "/add";
     }

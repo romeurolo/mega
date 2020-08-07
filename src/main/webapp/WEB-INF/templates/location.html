@@ -167,11 +167,15 @@
         <br>
         <br>
           <h3>Show me yours</h3>
-          <form>
+              <form th:object="${review}" th:action="@{'/api/review/1'}" method="post">
+                  <input type="hidden" th:field="*{id}"/>
+                  <input type="hidden" th:field="*{location}"/>
+                  <input type="hidden" th:field="*{type}"/>
+                  <input type="hidden" th:field="*{evaluation}"/>
               <div class="form-row">
                   <div class="col-md-5 mb-3">
-                    <label for="validationDefault01">What would like to be called in bed...</label>
-                    <input type="text" class="form-control" id="validationDefault01" required>
+                    <label>What would like to be called in bed...</label>
+                    <input type="text" class="form-control" th:field="*{name}" >
                   </div>
                   <div class="col-md-3 mb-3">
                     <label for="validationDefault02">Was it good for you?</label>
@@ -189,8 +193,8 @@
                   </div>
 
                   <div class="col-md-12 mb-6">
-                    <label for="validationDefault04">Tell me about it!</label>
-                    <input type="text" class="form-control" id="validationDefault04" required>
+                    <label >Tell me about it!</label>
+                    <input type="text" class="form-control" th:field="*{coment}">
                   </div>
                   <div>
                       <button class="btn btn-primary" type="submit">Gay up!</button>
