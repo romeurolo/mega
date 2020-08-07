@@ -43,7 +43,7 @@ public class MainController {
     @RequestMapping(method = RequestMethod.GET, path = {"/", ""})
     public String mainView() {
 
-        return "/mainView/index";
+        return "/index";
     }
 
     @RequestMapping(method = RequestMethod.GET, path = "/add")
@@ -56,6 +56,6 @@ public class MainController {
     @RequestMapping(method = RequestMethod.GET, path = "/{id}")
     public String LocationView(@PathVariable Integer id, Model model) {
         model.addAttribute("id",id);
-        return "/view/index";
+        return "/location";
     }
 }

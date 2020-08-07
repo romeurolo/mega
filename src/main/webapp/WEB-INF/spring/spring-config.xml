@@ -29,7 +29,7 @@
 
     <import resource="persistence.xml"/>
     <import resource="presentation.xml"/>
-    <import resource="servlet.xml"/>
+    <!--<import resource="servlet.xml"/>-->
 
 
 </beans>

@@ -18,12 +18,18 @@
     <!-- User @Controller, @Service annotations -->
     <mvc:annotation-driven/>
 
+
+
+
+
     <!-- Base package to search for spring beans -->
     <context:component-scan base-package="org.academiadecodigo.mega"/>
 
 
 
     <import resource="persistence.xml"/>
+    <import resource="presentation.xml"/>
+    <!--<import resource="servlet.xml"/>-->
 
 
 </beans>
