@@ -51,7 +51,7 @@ public class MainController {
     public String addLocationView(Model model) {
             model.addAttribute("review", new ReviewDto());
 
-        return "/add";
+        return "/addlocation";
     }
 
 
